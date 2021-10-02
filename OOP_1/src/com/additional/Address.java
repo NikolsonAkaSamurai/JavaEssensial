@@ -1,4 +1,4 @@
-package com.company;
+package com.additional;
 
 public class Address {
     private int index, house, apartments;
