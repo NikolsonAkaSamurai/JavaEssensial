@@ -7,9 +7,9 @@ public class Book {
     Content content;
 
     Book(Title title, Author author, Content content){
-        this.title = new Title();
-        this.author = new Author();
-        this.content = new Content();
+        this.title = title;
+        this.author = author;
+        this.content = content;
     }
 
     public static void main(String[] args) {
