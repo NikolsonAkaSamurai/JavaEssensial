@@ -1,4 +1,4 @@
-package com.company;
+package com.laboratorka1;
 
 
 public class Student {

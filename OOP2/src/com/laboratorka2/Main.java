@@ -1,4 +1,4 @@
-package Laboratorka2;
+package com.laboratorka2;
 
 public class Main {
 
