@@ -1,4 +1,4 @@
-package com.task3;
+package com.task4;
 
 public class Car {
 
@@ -16,20 +16,17 @@ public class Car {
     }
 
     Car(int year, double speed){
-        this.year = year;
+        this(year);
         this.speed = speed;
     }
 
     Car(int year, double speed, int weight){
-        this.year = year;
-        this.speed = speed;
+        this(year, speed);
         this.weight = weight;
     }
 
     Car(int year, double speed, int weight, String color){
-        this.year = year;
-        this.speed = speed;
-        this.weight = weight;
+        this(year, speed, weight);
         this.color = color;
     }
 
@@ -65,6 +62,4 @@ public class Car {
     public void setColor(String color) {
         this.color = color;
     }
-
-
 }
