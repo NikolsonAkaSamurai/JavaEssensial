@@ -1,28 +1,27 @@
 package com.task2;
 
 public class GoodPupil extends Pupil{
-
     @Override
-    public void study(){
-        System.out.println("Хорошо учится");
+    public void study() {
+        System.out.println("I like study");
 
     }
 
     @Override
-    public void read(){
-        System.out.println("Любит читать");
+    public void write() {
+        System.out.println("I don't like write");
 
     }
 
     @Override
-    public void write(){
-        System.out.println("Старается вести все конспекты");
+    public void read() {
+        System.out.println("I like read");
 
     }
 
     @Override
-    public void relax(){
-        System.out.println("Любит иногда посидеть в телефоне на уроке");
+    public void relax() {
+        System.out.println("I like relax");
 
     }
 }

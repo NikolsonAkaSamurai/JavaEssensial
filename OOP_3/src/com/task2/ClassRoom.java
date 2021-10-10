@@ -1,17 +1,13 @@
 package com.task2;
 
 public class ClassRoom {
-
-    Pupil pupil1;
-    Pupil pupil2;
-    Pupil pupil3;
-    Pupil pupil4;
+    Pupil[] pupils;
 
     ClassRoom(Pupil pupil1, Pupil pupil2, Pupil pupil3, Pupil pupil4){
-        this.pupil1 = pupil1;
-        this.pupil2 = pupil2;
-        this.pupil3 = pupil3;
-        this.pupil4 = pupil4;
-
+      pupils = new Pupil[4];
+      pupils[0] = pupil1;
+      pupils[1] = pupil2;
+      pupils[2] = pupil3;
+      pupils[3] = pupil4;
     }
 }
