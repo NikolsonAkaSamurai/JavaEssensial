@@ -1,4 +1,4 @@
-package com.laboratorka1;
+package com.company.laboratorka2;
 
 public class User {
     private String login;
@@ -12,14 +12,16 @@ public class User {
     }
 
     public void createQuery(){
+        class Query{
+            public void printToLog(){
+                System.out.println("пользователь "+login+" пароль "+password);
+            }
+        }
         Query query = new Query();
         query.printToLog();
     }
 
-    class Query{
 
-        public void printToLog(){
-            System.out.println("пользователь "+ login + " пароль "+password);
-        }
-    }
+
+
 }

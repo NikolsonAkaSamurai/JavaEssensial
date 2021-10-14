@@ -1,4 +1,4 @@
-package com.laboratorka2;
+package com.company.laboratorka2;
 
 
 public class Main {
