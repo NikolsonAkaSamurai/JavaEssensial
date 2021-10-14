@@ -10,22 +10,44 @@ public class Main {
 
 
             do{
-                System.out.println("Выберите операцию (add, del, show)");
+                System.out.println("1. Добавить элемент в список;\n" +
+                        "    2. Удалить элемент из списка;\n" +
+                        "    3. Показать содержимое списка;\n" +
+                        "    4. Проверить есть ли значение в списке;\n" +
+                        "    5. Заменить значение в списке.");
                 String operation = inputOperation();
                 switch(operation){
-                    case "add":{
+                    case "1":{
                         System.out.println("Впишите число для добавления");
                         nums.add(inputNum());
                         break;
                     }
-                    case "del":{
+                    case "2":{
                         System.out.println("Впишите что нужно удалить");
                         nums.remove((Integer) inputNum());
                         break;
                     }
-                    case "show":{
+                    case "3":{
                         System.out.println("Показываем весь лист");
                         System.out.println(nums.toString());
+                        break;
+                    }
+                    case "4":{
+                        System.out.println("Какой элемент ищем ?");
+                        int num = inputNum();
+                        if(nums.contains(num) == true){
+                            System.out.println("Такое элемент есть");
+                        }else{
+                            System.out.println("такого элемента нету в списке");
+                        }
+                        break;
+                    }
+                    case "5":{
+                        System.out.println("Укажите индекс");
+                        int index = inputNum();
+                        System.out.println("укажите новое число");
+                        int otherNum = inputNum();
+                        nums.set(index, otherNum);
                         break;
                     }
                 }
