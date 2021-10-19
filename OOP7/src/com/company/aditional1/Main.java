@@ -28,16 +28,16 @@ enum Vehicles{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Name: " + super.toString() + ", color = " + getColor() + ", price= " + this.price;
     }
 }
 
 public class Main {
 
     public static void main(String[] args) {
-        Vehicles vehicles = Vehicles.DODGE;
-        System.out.println(vehicles.price);
-        System.out.println(vehicles.getColor());
-        System.out.println(vehicles.toString());// не понял почему стринг серый
+        System.out.println(Vehicles.FERRARI.toString());
+        System.out.println(Vehicles.DODGE.toString());
+        System.out.println(Vehicles.CHEVROLET.toString());
+
     }
 }
