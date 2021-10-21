@@ -10,7 +10,7 @@ package сom.company.laboratorka1;
 
  class Error extends Exception{
      public void method(){
-         System.out.println("ошибка!");
+         System.out.println("Подождите, вы что то забыли из вещей");
      }
 
 }
@@ -19,7 +19,12 @@ package сom.company.laboratorka1;
 public class Main {
     public static void main(String[] args) throws Error {
         Dog dog = new Dog(true,true,false);
-        dog.walking();
+        try{
+            dog.walking();
+        }catch(Error e){
+            e.method();
+        }
+
     }
 
 
@@ -36,7 +41,7 @@ class Dog{
     }
 
     public void walking() throws Error{
-        if(collar == true && leash == true && toy == true){
+        if(collar && leash && toy){
             System.out.println("можно гулять");
         }else{
             throw new Error();
