@@ -8,31 +8,25 @@ package сom.company.laboratorka1;
 то выбросить свое исключение или же отработать нормально
  */
 
- class Error extends Exception{
-     public void method(){
-         System.out.println("Подождите, вы что то забыли из вещей");
-     }
+ class ExceptionDog extends Exception{
 
+     ExceptionDog(String message){
+         super(message);
+     }
 }
 
-
 public class Main {
-    public static void main(String[] args) throws Error {
-        Dog dog = new Dog(true,true,false);
-        try{
-            dog.walking();
-        }catch(Error e){
-            e.method();
-        }
-
+    public static void main(String[] args){
+        Dog dog = new Dog(true,true,true);
+        dog.checkDog();
+        Dog dog2 = new Dog(false,true,true);
+        dog2.checkDog();
     }
 
 
 }
 class Dog{
-    private boolean collar;
-    private boolean leash;
-    private boolean toy;
+    private boolean collar, leash, toy;
 
     Dog(boolean collar, boolean leash, boolean toy){
         this.collar = collar;
@@ -40,11 +34,23 @@ class Dog{
         this.toy = toy;
     }
 
-    public void walking() throws Error{
-        if(collar && leash && toy){
-            System.out.println("можно гулять");
-        }else{
-            throw new Error();
+
+
+    public void checkDog(){
+
+        try{
+            int a = 1;
+            if(!collar || !leash || !toy){
+                throw new ExceptionDog(" Вы забыли какую то вещь!");
+            }else{
+                System.out.println("Можно выходить на прогулку!");
+            }
+
+        }catch (ExceptionDog e){
+            System.out.println(e.getMessage());
         }
+
+
+
     }
 }
