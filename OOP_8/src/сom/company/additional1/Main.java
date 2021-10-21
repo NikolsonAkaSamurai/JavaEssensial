@@ -8,9 +8,11 @@ public class Main {
         }catch(ArithmeticException e){
             System.out.println(e.getMessage());
         }
+
     }
 
     static class Calculator{
+
         public static double div(int a, int b) throws ArithmeticException{
             double result = a/b;
             return result;
