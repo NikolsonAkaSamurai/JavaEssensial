@@ -39,7 +39,7 @@ class Dog{
     public void checkDog(){
 
         try{
-            int a = 1;
+
             if(!collar || !leash || !toy){
                 throw new ExceptionDog(" Вы забыли какую то вещь!");
             }else{
