@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a0154e8-858c-4aec-97c6-29bd0a101764" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/сom/company/additional1/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/сom/company/additional1/ExceptionZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OOP7/src/com/company/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP7/src/com/company/task2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сom/company/task3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/сom/company/task3/Price.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_8/сom/company/additional1/Main$Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_8/сom/company/additional1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_8/сom/company/additional1/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_8/сom/company/laboratorka1/Dog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_8/сom/company/laboratorka1/Dog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сom/company/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/сom/company/TaskList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сom/company/additional1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/сom/company/additional1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сom/company/laboratorka1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/сom/company/laboratorka1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сom/company/myTests/test4/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/сom/company/myTests/test4/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сom/company/myTests/test4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/сom/company/myTests/test4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сom/company/task2/InputText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/сom/company/task2/InputText.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сom/company/task2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/сom/company/task2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/сom/company/task2/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/сom/company/task2/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_8/сom/company/task2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_8/сom/company/task2/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +48,7 @@
       <recent name="сom.company.task2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="сom.company.task2.Main" />
       <module name="OOP_8" />
@@ -73,12 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="сom.company.myTests.test4.Main" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="сom.company.task3.Main" />
       <module name="OOP_8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="сom.company.myTests.test4.*" />
+          <option name="PATTERN" value="сom.company.task3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (5)" />
         <item itemvalue="Application.Main (4)" />
-        <item itemvalue="Application.Main (3)" />
       </list>
     </recent_temporary>
   </component>
