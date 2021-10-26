@@ -57,7 +57,7 @@ public class Monitor extends Device{
     //переопределенные методы Object
     @Override
     public String toString() {
-        return super.toString()+", X = "+resolutionX+", Y = "+resolutionY;
+        return "Monitor: "+manufacturer+", price = "+price+", serial number = "+serialNumber+ ", X = "+resolutionX+", Y = "+resolutionY;
     }
 
     @Override

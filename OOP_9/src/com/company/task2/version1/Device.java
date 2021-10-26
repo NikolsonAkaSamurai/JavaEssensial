@@ -43,12 +43,18 @@ public class Device {
     //переопределенные методы Object
     @Override
     public String toString() {
-        return "Device: manufacturer = "+manufacturer+", price = "+price+", serial number = "+serialNumber;
+        return "Device: "+manufacturer+", price = "+price+", serial number = "+serialNumber;
     }
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        final int prime = 37;
+        int result = 17;
+
+        result = prime * result + (manufacturer == null ? 0 : manufacturer.hashCode());
+        result = prime * result + Float.floatToIntBits(price);
+        result = prime * result + (serialNumber == null ? 0 : serialNumber.hashCode());
+        return result;
     }
 
     @Override
