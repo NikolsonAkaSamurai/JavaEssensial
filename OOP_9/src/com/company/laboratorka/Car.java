@@ -1,11 +1,12 @@
 package com.company.laboratorka;
 
 public class Car {
-
+    //поля
     public static int COUNTER ;
     private int id, year, price, regNum;
     private String mark, model, color;
 
+    //конструкторы
     Car(){}
 
     public Car( int year, int price, int regNum, String mark, String model, String color) {
@@ -19,14 +20,31 @@ public class Car {
         this.color = color;
     }
 
+    //переопределенные методы Object
     @Override
     public int hashCode() {
-        return super.hashCode();
+        int result = 17;
+        final int prime = 37;
+
+        result = prime * result + ((mark == null)? 0: mark.hashCode());
+        result = prime * result + ((model == null)? 0: model.hashCode());
+        result = prime * result + ((color == null)? 0: color.hashCode());
+        result = prime * result + year;
+        result = prime * result + price;
+        result = prime * result + regNum;
+
+        return result;
     }
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        Car c2 = (Car) obj;
+        return (this.mark.equals(c2.getMark()) &&
+                this.model.equals(c2.getModel()) &&
+                this.color.equals(c2.getColor()) &&
+                this.year == c2.year &&
+                this.price == c2.price &&
+                this.regNum == c2.regNum)?true:false;
     }
 
     @Override
@@ -34,7 +52,7 @@ public class Car {
         return "id "+id+" mark "+mark+" model "+model+ " год "+year+" цвет "+color+" цена "+price+" регНом "+regNum;
     }
 
-
+    //гетеры и сетеры
     public int getYear() {
         return year;
     }
