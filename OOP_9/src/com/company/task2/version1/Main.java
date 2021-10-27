@@ -22,5 +22,8 @@ public class Main {
         System.out.println("Вывод данных monitor1: " + monitor1.toString());
         System.out.println("monitor1 сравниваем с monitor2: " + monitor1.equals(monitor2));
         System.out.println("monitor1 сравниваем с monitor3: " + monitor1.equals(monitor3));
+        System.out.println("хеш код monitor1: " + monitor1.hashCode());
+        System.out.println("хеш код monitor2: " + monitor2.hashCode());
+        System.out.println("хеш код monitor3: " + monitor3.hashCode()+"\n");
     }
 }

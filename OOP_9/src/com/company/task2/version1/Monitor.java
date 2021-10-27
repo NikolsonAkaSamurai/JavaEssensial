@@ -62,7 +62,17 @@ public class Monitor extends Device{
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        int result = 18;
+        final int prime = 37;
+
+        result = prime * result + (manufacturer == null ? 0 : manufacturer.hashCode());
+        result = prime * result + Float.floatToIntBits(price);
+        result = prime * result + (serialNumber == null ? 0 : serialNumber.hashCode());
+        result = prime * result + resolutionX;
+        result = prime * result + resolutionY;
+        result = prime * result + ethernetAdapter;
+        result = prime * result + (mac == null ? 0 : mac.hashCode());
+        return result;
     }
 
     @Override
