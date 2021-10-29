@@ -8,6 +8,6 @@ public class Main {
         int[] nums = {10, 20, 30, 40};
 
 
-        MyIterator<Integer[]> it = new MyIterator<>(nums);
+//        MyIterator<Integer[]> it = new MyIterator<>(nums);
     }
 }
