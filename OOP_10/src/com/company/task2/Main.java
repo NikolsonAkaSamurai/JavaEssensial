@@ -26,5 +26,8 @@ public class Main {
         //получаем Аркадия по индексу 5
         System.out.println(myList2.get(5));
 
+        //количество заполненных элементов в списке
+        System.out.println(myList2.getNumsAllElements());
+
     }
 }

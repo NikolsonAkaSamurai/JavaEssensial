@@ -1,11 +1,12 @@
 package com.company.task2;
 
 public class MyList <T>{
-
+    //поля
     private  int size = 10;
     private T[] box;
     private  int counter;
 
+    //конструктор
     MyList(){
         box = (T[])(new Object[size]);
     }
@@ -42,8 +43,15 @@ public class MyList <T>{
     public String toString() {
         String line = "";
         for (int i = 0; i < box.length; i++) {
-            line += box[i] + " ";
+            if(box[i] != null){
+                line += box[i] + " ";
+            }
+
         }
         return line;
+    }
+
+    public int getNumsAllElements(){
+        return counter;
     }
 }
